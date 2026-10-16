@@ -12,7 +12,9 @@ meihua.py —— 梅花易数起卦（纯标准库）
 说明：
     先天八卦数必用（乾1 兑2 离3 震4 **巽5 坎6** 艮7 坤8）—— 08 C1，勿用后天方位数。
     体用判定：**动爻所在之卦为用卦**，另一卦为体卦 —— 08 C4。
-    时间起卦需农历月日，脚本不支持公历→农历换算，故须由使用者给出。
+    时间起卦需农历月日。脚本刻意不做公历→农历换算（农历初一由"日月合朔"天文时刻定，
+    含闰月判定），农历月日请由使用者给出，或用搜索工具查权威历算资料后照抄
+    （如紫金山天文台历算室每年发布的《日历资料》）—— 09-scripts.md 4.1。
 """
 
 import argparse
@@ -94,7 +96,9 @@ def main(argv=None):
         r["source"] = source
     elif a.time:
         if a.lunar_month is None or a.lunar_day is None:
-            p.error("时间起卦必须给出 --lunar-month 与 --lunar-day（农历月日，脚本不做农历换算）")
+            p.error("时间起卦必须给出 --lunar-month 与 --lunar-day（农历月日，脚本刻意不做农历换算）。"
+                    "取法：请使用者直接提供，或用搜索工具查权威历算资料（如紫金山天文台《日历资料》）后照抄，"
+                    "不要凭记忆推算。")
         dt = C.parse_datetime(a.time)
         yb = a.year_branch
         if yb is None:
