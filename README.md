@@ -96,7 +96,7 @@ git clone https://github.com/AsuraYY/zhonghua-shushu.git \
 
 [MIT License](./LICENSE) — 可自由使用、复制、修改、合并、发布、分发、再许可及销售，但须保留版权与许可声明，且软件按「原样」提供，不含任何担保。
 
-Copyright (c) 2026 YyZhou
+Copyright (c) 2026 AsuraYY
 
 ---
 
