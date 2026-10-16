@@ -1,7 +1,8 @@
 # 解读模板库（可直接套用）
 
 > 使用前先输出边界意识：占卜为文化民俗参考。模板中的「〔 〕」为占位符。
-> 所有算法类内容（五虎遁、纳甲、起运折算、体用判定等）见 [08-algorithms.md](08-algorithms.md)。
+> 所有算法类内容（五虎遁、纳甲、起运折算、体用判定等）见 [08-algorithms.md](08-algorithms.md)；
+> **其中的数值先由 `scripts/` 脚本算出**（`bazi.py` / `liuyao.py` / `meihua.py` / `zeri.py` / `wuge.py`，见 [09-scripts.md](09-scripts.md)），再填入模板。
 
 ## 通用骨架（所有术数）
 

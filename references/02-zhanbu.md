@@ -2,6 +2,8 @@
 
 > 边界：问事占卜属民俗参考，一事一占、结果不绝对；涉及健康/法律/投资请找专业人士。案例均虚构。
 > **起卦与装卦算法见 [08-algorithms.md](08-algorithms.md) B、C 节**（铜钱爻象、纳甲、八宫卦序、世应、六亲、梅花起卦与体用判定）。
+> 🔧 装卦直接跑 `python3 scripts/liuyao.py --values 7,8,7,8,7,8 --date YYYY-MM-DD`，
+> 梅花起卦跑 `python3 scripts/meihua.py --numbers 3,8`（见 [09-scripts.md](09-scripts.md)）。
 
 ## 5. 六爻（纳甲筮法）
 
